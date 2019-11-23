@@ -10,6 +10,7 @@ class CakesController < ApplicationController
   # GET /cakes/1
   # GET /cakes/1.json
   def show
+    @cake.update!(cake_type: @cake.cake_type + 1)
   end
 
   # GET /cakes/new
